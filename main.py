@@ -38,7 +38,14 @@ def GFT(data : list, start: int, class_interval : int = None , quantity_class : 
     
     n = start
     loop = quantity_class
-    for i in range(loop):
+    for i in range(loop): 
+        # first is the class
+        # second is the first number of range in that class
+        # third is last number of range in that class
+        # fourth is count of number in that class
+        # fifth is lower of that class
+        # sixth is upper of that class
+        # seventh is number is in the center of that class
         exec(f"print('|',i+1,'|', '|',n,'-',n+class_interval-1,'|', ',',nfu{n},',',(n+(n-1))/2,',', ((n+class_interval-1)+n+class_interval)/2,',',(n+n+class_interval-1)/2)") # display
         n += class_interval # using it for display
 
